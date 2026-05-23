@@ -1,0 +1,53 @@
+/* Clean redesign · premium book landing · calm sage accent
+ * Verification target: no horizontal overflow at 320 / 375 / 414 / 768 / desktop
+ */
+:root {
+  --color-page: oklch(98% 0.006 95);
+  --color-surface: oklch(100% 0 0);
+  --color-soft: oklch(94% 0.022 142);
+  --color-soft-2: oklch(91% 0.028 88);
+  --color-ink: oklch(20% 0.025 70);
+  --color-muted: oklch(50% 0.025 70);
+  --color-line: oklch(86% 0.018 82);
+  --color-accent: oklch(45% 0.112 148);
+  --color-accent-dark: oklch(35% 0.098 148);
+  --color-warm: oklch(68% 0.14 58);
+  --color-red: oklch(49% 0.145 32);
+  --color-white: oklch(100% 0 0);
+  --color-focus: oklch(58% 0.15 148);
+
+  --font-display: "Anek Kannada", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", "Anek Kannada", system-ui, sans-serif;
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.92rem;
+  --text-md: 1rem;
+  --text-lg: 1.16rem;
+  --text-xl: 1.4rem;
+  --text-2xl: 2rem;
+  --text-3xl: clamp(2.6rem, 7vw, 5.8rem);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.85rem;
+  --radius-lg: 1.25rem;
+  --shadow-soft: 0 1.3rem 4rem color-mix(in oklch, var(--color-ink) 14%, transparent);
+  --rule-thin: 1px;
+  --rule-heavy: 2px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur-med: 260ms;
+  --dur-slow: 520ms;
+}
