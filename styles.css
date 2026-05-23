@@ -257,6 +257,26 @@ h2 {
   background: var(--color-surface);
 }
 
+.reader-guide {
+  background: var(--color-page);
+}
+
+.reader-guide-body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-lg);
+  max-width: 70rem;
+  color: var(--color-muted);
+  font-size: var(--text-lg);
+}
+
+.reader-guide-body p {
+  margin: 0;
+  padding: var(--space-lg);
+  border-left: var(--rule-heavy) solid var(--color-accent);
+  background: var(--color-surface);
+}
+
 .section-head {
   max-width: 62rem;
   margin-bottom: var(--space-2xl);
@@ -496,6 +516,10 @@ h2 {
 
   .purchase-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .reader-guide-body {
+    grid-template-columns: 1fr;
   }
 }
 
