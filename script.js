@@ -1,8 +1,5 @@
 const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
-const copyPhone = document.querySelector("[data-copy-phone]");
-const copyStatus = document.querySelector("[data-copy-status]");
-const phoneNumber = "+91 63637 11063";
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
@@ -14,17 +11,6 @@ if (navToggle && nav) {
     if (event.target instanceof HTMLAnchorElement) {
       nav.classList.remove("is-open");
       navToggle.setAttribute("aria-expanded", "false");
-    }
-  });
-}
-
-if (copyPhone && copyStatus) {
-  copyPhone.addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(phoneNumber);
-      copyStatus.textContent = "WhatsApp number copied.";
-    } catch {
-      copyStatus.textContent = phoneNumber;
     }
   });
 }
