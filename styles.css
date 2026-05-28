@@ -384,6 +384,10 @@ h2 {
   background: var(--color-soft-2);
 }
 
+.reviews .section-head {
+  margin-bottom: var(--space-md);
+}
+
 .review-card {
   max-width: 58rem;
   padding: var(--space-xl);
@@ -391,6 +395,13 @@ h2 {
   border-radius: var(--radius-md);
   background: var(--color-page);
   box-shadow: var(--shadow-soft);
+}
+
+.review-source {
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 800;
 }
 
 .review-card blockquote {
