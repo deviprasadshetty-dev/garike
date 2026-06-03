@@ -385,7 +385,56 @@ h2 {
 }
 
 .reviews .section-head {
+  margin-bottom: var(--space-xl);
+}
+
+.teacher-review {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 0.7fr);
+  gap: clamp(var(--space-lg), 4vw, var(--space-2xl));
+  align-items: start;
+  margin-bottom: var(--space-xl);
+  padding: clamp(var(--space-lg), 4vw, var(--space-2xl));
+  border: var(--rule-thin) solid color-mix(in oklch, var(--color-accent) 32%, var(--color-line));
+  border-radius: var(--radius-lg);
+  background: color-mix(in oklch, var(--color-page) 82%, var(--color-soft));
+  box-shadow: var(--shadow-soft);
+}
+
+.teacher-review blockquote {
+  margin: 0 0 var(--space-lg);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+.teacher-review p,
+.full-review p {
+  color: var(--color-muted);
+  font-size: var(--text-lg);
+}
+
+.teacher-review > div > p:last-child,
+.full-review p:last-child {
+  margin-bottom: 0;
+}
+
+.full-review {
+  border-left: var(--rule-heavy) solid var(--color-accent);
+  padding-left: var(--space-lg);
+}
+
+.full-review summary {
   margin-bottom: var(--space-md);
+  color: var(--color-accent);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.full-review summary::marker {
+  color: var(--color-accent);
 }
 
 .review-grid {
@@ -426,6 +475,18 @@ h2 {
 }
 
 @media (max-width: 760px) {
+  .teacher-review {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-review blockquote {
+    font-size: clamp(1.8rem, 10vw, 3rem);
+  }
+
+  .full-review {
+    padding-left: var(--space-md);
+  }
+
   .review-grid {
     grid-template-columns: 1fr;
   }
