@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ಗರಿಕೆ ಕಾದಂಬರಿಯ ಬಗ್ಗೆ ಬ್ಲಾಗ್ — ಕನ್ನಡ ಪುಸ್ತಕಗಳು, ಕನ್ನಡ ಕಾದಂಬರಿಗಳು, ಮಲೆನಾಡು-ಕರಾವಳಿ ಬದುಕು ಮತ್ತು ಗೌರಿಯ ಕಥೆಯ ಆಳವಾದ ವಿಶ್ಲೇಷಣೆ.">
+  <meta name="author" content="ದೇವಿಪ್ರಸಾದ್ ಶೆಟ್ಟಿ ಹೆಬ್ಬಾಗಿಲುಮನೆ">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deviprasadshetty-dev.github.io/garike/blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ಗರಿಕೆ ಬ್ಲಾಗ್ | Kannada Novel Blog">
+  <meta property="og:description" content="ಗರಿಕೆ ಕಾದಂಬರಿಯ ಹಿನ್ನೆಲೆ, ಕನ್ನಡ ಸಾಹಿತ್ಯ, ಮತ್ತು ಗೌರಿಯ ಕಥೆಯ ಆಳವಾದ ಅನ್ವೇಷಣೆ.">
+  <meta property="og:url" content="https://deviprasadshetty-dev.github.io/garike/blog/">
+  <meta property="og:locale" content="kn_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ಗರಿಕೆ ಬ್ಲಾಗ್ | Kannada Novel Blog">
+  <meta name="twitter:description" content="ಗರಿಕೆ ಕಾದಂಬರಿಯ ಹಿನ್ನೆಲೆ, ಕನ್ನಡ ಸಾಹಿತ್ಯ, ಮತ್ತು ಗೌರಿಯ ಕಥೆಯ ಆಳವಾದ ಅನ್ವೇಷಣೆ.">
+  <title>ಗರಿಕೆ ಬ್ಲಾಗ್ | Kannada Novel Articles & Stories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../tokens.css">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .blog-header {
+      text-align: center;
+      padding: var(--space-4xl) clamp(var(--space-md), 5vw, var(--space-3xl)) var(--space-2xl);
+      border-bottom: var(--rule-thin) solid var(--color-line);
+    }
+    .blog-header h1 {
+      margin-bottom: var(--space-sm);
+    }
+    .blog-header p {
+      color: var(--color-muted);
+      font-size: var(--text-lg);
+      max-width: 36rem;
+      margin-inline: auto;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+      gap: var(--space-lg);
+      padding: var(--space-2xl) clamp(var(--space-md), 5vw, var(--space-3xl)) var(--space-4xl);
+      max-width: 76rem;
+      margin-inline: auto;
+    }
+    .blog-card {
+      display: flex;
+      flex-direction: column;
+      border: var(--rule-thin) solid var(--color-line);
+      border-radius: var(--radius-lg);
+      background: var(--color-surface);
+      overflow: hidden;
+      transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-soft);
+    }
+    .blog-card-body {
+      padding: var(--space-lg);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card .tag {
+      color: var(--color-accent);
+      font-size: var(--text-xs);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-sm);
+    }
+    .blog-card h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: var(--space-sm);
+    }
+    .blog-card h2 a {
+      color: var(--color-ink);
+    }
+    .blog-card h2 a:hover {
+      color: var(--color-accent);
+    }
+    .blog-card p {
+      color: var(--color-muted);
+      font-size: var(--text-sm);
+      margin-bottom: var(--space-md);
+      flex: 1;
+    }
+    .blog-card .read-more {
+      color: var(--color-accent);
+      font-weight: 700;
+      font-size: var(--text-sm);
+    }
+    .blog-card .meta {
+      color: var(--color-muted);
+      font-size: var(--text-xs);
+      margin-top: auto;
+      padding-top: var(--space-sm);
+      border-top: var(--rule-thin) solid var(--color-line);
+    }
+    .back-link {
+      display: inline-block;
+      margin: var(--space-md) clamp(var(--space-md), 5vw, var(--space-3xl));
+      color: var(--color-accent);
+      font-weight: 700;
+      font-size: var(--text-sm);
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 760px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="../" aria-label="ಗರಿಕೆ ಮುಖಪುಟ">
+      <span>ಗರಿಕೆ</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="ಮೆನು ತೆರೆಯಿರಿ" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" data-nav>
+      <a href="../#buy">ಖರೀದಿ</a>
+      <a href="../#meaning">ಹೆಸರಿನ ಅರ್ಥ</a>
+      <a href="../#story">ಕಥೆ</a>
+      <a href="../#reviews">ಓದುಗರ ಮಾತು</a>
+      <a href="../#details">ವಿವರಗಳು</a>
+      <a href="../#author">ಲೇಖಕರು</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="blog-header">
+      <p class="eyebrow">ಗರಿಕೆ ಬ್ಲಾಗ್</p>
+      <h1>ಕಥೆಯ ಹಿಂದಿನ ಕಥೆ</h1>
+      <p>ಗರಿಕೆ ಕಾದಂಬರಿಯ ಹಿನ್ನೆಲೆ, ಕನ್ನಡ ಸಾಹಿತ್ಯದ ನೋಟ, ಮತ್ತು ಗೌರಿಯ ಬದುಕಿನ ಆಳವಾದ ಅನ್ವೇಷಣೆ.</p>
+    </div>
+
+    <div class="blog-grid">
+      <article class="blog-card">
+        <div class="blog-card-body">
+          <p class="tag">ಕಾದಂಬರಿ ವಿಶ್ಲೇಷಣೆ</p>
+          <h2><a href="garike-hesarina-artha.html">'ಗರಿಕೆ' ಹೆಸರಿನ ಹಿಂದಿನ ಆಳವಾದ ಅರ್ಥವೇನು?</a></h2>
+          <p>ಗುಲಾಬಿಯ ಬಣ್ಣವಾಗಲೀ, ಮಲ್ಲಿಗೆಯ ಕಂಪಾಗಲೀ ಇಲ್ಲದ ಈ ಪುಟ್ಟ ಹುಲ್ಲಿಗೆ ಕಾದಂಬರಿಯ ಹೆಸರನ್ನೇಕೆ ಆರಿಸಲಾಯಿತು? ಗರಿಕೆಯ ಮೊಂಡುತನ, ಬದುಕಿನ ಸಂಕೇತ ಮತ್ತು ಗೌರಿಯ ಪಾತ್ರದೊಂದಿಗಿನ ಸಂಪರ್ಕದ ಆಳವಾದ ವಿವರ.</p>
+          <p class="meta">ಜೂನ್ ೧, ೨೦೨೬ · ೫ ನಿಮಿಷ ಓದು</p>
+          <a class="read-more" href="garike-hesarina-artha.html">ಓದಿ →</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-body">
+          <p class="tag">ಕನ್ನಡ ಸಾಹಿತ್ಯ</p>
+          <h2><a href="kannada-kadambari-odalu.html">ಕನ್ನಡ ಕಾದಂಬರಿ ಓದುವುದೇಕೆ? ಹೊಸ ಓದುಗರಿಗೊಂದು ಮಾರ್ಗದರ್ಶಿ</a></h2>
+          <p>ಕನ್ನಡ ಕಾದಂಬರಿಗಳನ್ನು ಓದಲು ಆರಂಭಿಸುವವರಿಗೆ — ಯಾವ ಪುಸ್ತಕಗಳಿಂದ ಆರಂಭಿಸಬೇಕು, ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಶ್ರೀಮಂತಿಕೆ ಏನು, ಮತ್ತು 'ಗರಿಕೆ' ಯಾಕೆ ಉತ್ತಮ ಆರಂಭವಾಗಬಹುದು ಎಂಬ ಮಾರ್ಗದರ್ಶಿ.</p>
+          <p class="meta">ಜೂನ್ ೫, ೨೦೨೬ · ೭ ನಿಮಿಷ ಓದು</p>
+          <a class="read-more" href="kannada-kadambari-odalu.html">ಓದಿ →</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-body">
+          <p class="tag">ಲೇಖಕರ ನೋಟ</p>
+          <h2><a href="gauri-pathsanchike.html">ಗೌರಿಯ ಪಯಣ: ಮಲೆನಾಡಿನ ಮಂಜಿನಿಂದ ಕರಾವಳಿಯ ಬಿಸಿಲಿಗೆ</a></h2>
+          <p>ಗೌರಿಯ ಪಾತ್ರ ಹುಟ್ಟಿದ್ದು ಹೇಗೆ? ಮಲೆನಾಡು ಮತ್ತು ಕರಾವಳಿಯ ಭೌಗೋಳಿಕ, ಸಾಮಾಜಿಕ ಹಿನ್ನೆಲೆ ಕಥೆಯ ಮೇಲೆ ಯಾವ ಪ್ರಭಾವ ಬೀರಿದೆ? ಈ ಲೇಖನದಲ್ಲಿ ಲೇಖಕರ ದೃಷ್ಟಿಕೋನದಿಂದ ಗೌರಿಯ ಪಯಣದ ವಿಶ್ಲೇಷಣೆ.</p>
+          <p class="meta">ಜೂನ್ ೧೦, ೨೦೨೬ · ೬ ನಿಮಿಷ ಓದು</p>
+          <a class="read-more" href="gauri-pathsanchike.html">ಓದಿ →</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-body">
+          <p class="tag">ಸ್ಫೂರ್ತಿ</p>
+          <h2><a href="baredoddakke-prerane.html">ಮೊದಲ ಕಾದಂಬರಿ ಬರೆಯಲು ಸ್ಫೂರ್ತಿ ಸಿಕ್ಕಿದ್ದು ಹೇಗೆ?</a></h2>
+          <p>ಶಾಲಾ ದಿನಗಳ 'ಬಣ್ಣದ ಗರಿ' ಮಕ್ಕಳ ಪತ್ರಿಕೆಯಿಂದ ಆರಂಭವಾದ ಬರವಣಿಗೆಯ ಪಯಣ, ಮೊದಲ ಕಾದಂಬರಿಯವರೆಗೆ. ಲೇಖಕರು ತಮ್ಮ ಸ್ಫೂರ್ತಿ, ಓದು, ಅನುಭವ ಮತ್ತು ಕನಸಿನ ಬಗ್ಗೆ ಹಂಚಿಕೊಳ್ಳುವ ಮಾತುಗಳು.</p>
+          <p class="meta">ಜೂನ್ ೧೫, ೨೦೨೬ · ೫ ನಿಮಿಷ ಓದು</p>
+          <a class="read-more" href="baredoddakke-prerane.html">ಓದಿ →</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>ಗರಿಕೆ · ದೇವಿಪ್ರಸಾದ್ ಶೆಟ್ಟಿ ಹೆಬ್ಬಾಗಿಲುಮನೆ</p>
+    <div>
+      <a href="../">ಮುಖಪುಟ</a>
+      <a href="https://notionpress.com/in/read/garike" target="_blank" rel="noopener">Notion Press</a>
+      <a href="https://www.amazon.in/Garike-%E0%B2%97%E0%B2%B0%E0%B2%BF%E0%B2%95%E0%B3%86-Deviprasad-Shetty-hebbagilumane/dp/B0H1XQVRCG" target="_blank" rel="noopener">Amazon</a>
+      <a href="https://www.flipkart.com/garike/p/itm26f7aebade618?pid=9798904790196" target="_blank" rel="noopener">Flipkart</a>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector("[data-nav-toggle]");
+    const nav = document.querySelector("[data-nav]");
+    if (navToggle && nav) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("is-open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+      nav.addEventListener("click", (event) => {
+        if (event.target instanceof HTMLAnchorElement) {
+          nav.classList.remove("is-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+  </script>
+</body>
+</html>
